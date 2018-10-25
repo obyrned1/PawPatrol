@@ -1,0 +1,17 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Paw Patrol</title>
+		<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+	<h1>HELLO</h1>
+		<div class="wrapper">
+		{% block content %}
+		{% endblock %}
+</div>
+
+</body>
+</html>
