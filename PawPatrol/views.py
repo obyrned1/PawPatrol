@@ -1,7 +1,5 @@
 from django.http import HttpResponse
 
-def about(request):
-    return HttpResponse('about')
-
-def signup(request):
-    return HttpResponse('signup')
+def signed_in(request):
+    text = """<h1>You have sucessfully signed in.</h1>"""
+    return HttpResponse(text)
